@@ -32,6 +32,9 @@ def get_secret(setting, secrets=secrets):
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
+PICTURE_SIZE = 600
+THUMBNAIL_SIZE = 90
+
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = get_secret('REDCROSS_ENY_SECRET')
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -102,17 +105,23 @@ LOGIN_URL='/accounts/login'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 STATIC_ROOT = '/var/www/html/arc/redcross_eny/static_root'
+MEDIA_ROOT = '/var/www/html/arc/redcross_eny/uploads'
+#MEDIA_ROOT = os.path.join(BASE_DIR,'uploads')
+MEDIA_URL = '/uploads/'
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
     '/home/grovesr/.virtualenvs/rims/local/lib/python2.7/site-packages/ims/static',
+    #'ims/static',
 )
 
 LOG_FILE=os.path.join(BASE_DIR, 'redcross_eny.log')
 
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates'),
-                 '/home/grovesr/.virtualenvs/rims/local/lib/python2.7/site-packages/ims/templates',]
+                 '/home/grovesr/.virtualenvs/rims/local/lib/python2.7/site-packages/ims/templates',
+                 #'ims/templates',
+                 ]
 # DJANGO_LOG_LEVEL=DEBUG
 # # Logging setup
 # LOGGING = {
