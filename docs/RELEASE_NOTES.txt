@@ -4,3 +4,5 @@
 * 56c2fc7 add template vars for adminName, adminEmail, siteVersion, imsVersion
 * 0b52973 add settings for VERSION, SITE_VERSION, and SERVER_EMAIL
 * 220ec01 feat:add VERSION so we have a single source of version information
+10/11/2015 Version 1.2.1:
+* 5b480b5 roll back adding  date and comments to version info to allow deployment of product code generation features
