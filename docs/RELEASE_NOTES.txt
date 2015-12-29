@@ -16,3 +16,5 @@
 * 8fb5394 (HEAD, master) feat: Update for paging and small style updates
 28/12/2015 Version 1.5.0:
 * be5139d (HEAD, master) feat: Update to Django 1.9 from 1.7
+29/12/2015 Version 1.5.1:
+* a727fa8 (HEAD, master) feat: Add password management features
