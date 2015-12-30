@@ -148,7 +148,7 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
         'OPTIONS': {
-            'min_length': 8,
+'min_length': 8,
         }
     },
 ]
@@ -158,6 +158,7 @@ EMAIL_HOST = get_secret('REDCROSS_ENY_EMAIL_HOST')
 EMAIL_PORT = 587
 EMAIL_HOST_USER = get_secret('REDCROSS_ENY_EMAIL_HOST_USER')
 SERVER_EMAIL = EMAIL_HOST_USER
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 EMAIL_HOST_PASSWORD = get_secret('REDCROSS_ENY_EMAIL_HOST_PASSWORD')
 EMAIL_USE_TLS = True
 
