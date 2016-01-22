@@ -22,3 +22,5 @@
 * 9a707b6 feat: Add password management features
 19/01/2016 Version 1.5.2:
 * 6bbe36b (HEAD, master) fix: logout issue with non-admin users
+22/01/2016 Version 1.5.3:
+* 7d4f783 (HEAD, master) feat: Remove IMS page, it's not used.  Redirect to Home if IMS page requested.
